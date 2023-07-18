@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio 1</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap");
+
+      :root {
+        --fontroboto: "Roboto", sans-serif;
+        --fontrobotoslab: "Roboto Slab", serif;
+      }
+
+      #logo {
+        width: 10%;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      a {
+        font-family: var(--fontroboto);
+        font-weight: 400;
+        text-decoration: none;
+        color: #04146c;
+        font-size: 24px;
+      }
+
+      .activo {
+        font-weight: 700;
+      }
+
+      li {
+        padding-left: 20px;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      .bodycontacto {
+        border: #04146c solid 2px;
+        box-sizing: border-box;
+        width: 750px;
+        height: 740px;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+      .pcontacto {
+        font-family: var(--fontrobotoslab);
+        font-weight: 700;
+        color: #2c00cc;
+        font-size: 36px;
+      }
+
+      .inputcontacto {
+        width: 500px;
+        height: 50px;
+        border: #98b3e6 2px solid;
+      }
+
+      .textareacontacto {
+        width: 500px;
+        height: 100px;
+        border: #98b3e6 2px solid;
+      }
+
+      .formcontacto {
+        text-align: start;
+        
+      }
+
+      .labelcontacto {
+        color: #04146c;
+        font-size: 30px;
+        font-family: var(--fontroboto);
+        font-weight: 700;
+        text-align: start;
+      }
+      
+
+      button {
+        font-family: var(--fontrobotoslab);
+        font-weight: 700;
+        font-size: 32px;
+        flex-direction: row;
+        border: none;
+        border-radius: 10px;
+        margin-top: 10px;
+
+
+      }
+      div{
+        text-align: start;
+      }
+
+      .bgorange {
+        background-color: #f98500;
+      }
+
+      .bgblue {
+        background-color: #2c00cc;
+      }
+
+      .letrawithe {
+        color: white;
+      }
+      
+      nav {
+        display: flex;
+      }
+
+      main{
+        padding-left: 40px;
+        
+        padding-right: 30px;
+      }
+
+      header{
+        margin-top: 10px;
+        padding-left: 40px;
+        
+      }
+
+      h2{
+
+        font-family: var(--fontroboto);
+        font-weight: 400;
+        font-size: 30px;
+        color: #04146c;
+        text-align: start;
+      }
+
+
+      
+    </style>
+  </head>
+
+  <body class="bodycontacto">
+    <header>
+      <hr>
+      <nav>
+        <img id="logo" src="./M5-logo-azul.svg" />
+        <ul>
+          <li>
+            <a href="./index.html">HOME</a>
+          </li>
+
+          <li>
+            <a href="./contacto.html" class="activo">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="#" class="formcontacto">
+        <p class="pcontacto">¿Queres que nos contactamos con vos?</p>
+        <h2>Dejanos tu consulta:</h2>
+
+        <label for="name" class="labelcontacto">Nombre completo</label>
+
+       <br><br>
+        <input type="text" name="name" required="true" class="inputcontacto" />
+        <br>
+
+        <label for="email" required="true" class="labelcontacto">Email</label>
+
+        <br/><br>
+
+        <input
+          type="text"
+          name="email"
+          required="true"
+          placeholder="micorreo@gmail.com"
+          class="inputcontacto"
+        />
+
+        <br/>
+
+        <label for="coment" aria-required="true" class="labelcontacto">Comentario</label>
+
+        <br /><br>
+
+        <textarea name="coment" cols="30" rows="10" class="textareacontacto"
+        >Buenos dias estimados, queria comentarles que...</textarea>
+        <br />
+
+        <div>
+        <button type="reset" class="bgorange letrawithe">Resetear</button>
+        <button type="submit" class="bgblue letrawithe">Enviar</button>
+      </div>
+      </form>
+    </main>
+  </body>
+</html>

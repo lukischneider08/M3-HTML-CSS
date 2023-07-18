@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío 1</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+
+      :root {
+        --fuenteprimaria: "Mulish", sans-serif;
+      }
+
+      body {
+        font-family: var(--fuenteprimaria);
+        text-align: center;
+        background-image: url(./M4-desafio1-fondo.png);
+      }
+
+      input,
+      button {
+        width: 500px;
+        height: 50px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: #414166 solid 2px;
+        font-size: 18px;
+        font-weight: 400;
+        display: block;
+      }
+
+      button {
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+        background-color: #15163d;
+        width: 523px;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #04146c;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+      }
+
+      div {
+        width: 50%;
+      }
+
+      form {
+        width: 600px;
+        height: 400px;
+        padding: 20px;
+        border: #818ec9 solid 1px;
+      }
+      .contenedor {
+
+        
+
+        background-image: url(./M4-desafio1-fondo-form.png);
+        display: flex;
+        margin-left: 25%;
+        margin-top: 20px;
+        padding-right: 100px;
+        padding-top:40px ;
+        padding-bottom: 40px;
+        
+        padding-left: 100px;
+
+
+
+      }
+      body{
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="contenedor">
+      <div>
+        <form>
+          <h1>Iniciar sesion</h1>
+          <input
+            type="text"
+            name="name"
+            placeholder="Usuario"
+          />
+
+          <input
+            type="text"
+            name="contrasena"
+            placeholder="Contraseña"
+          />
+
+          <button>Ver que me contesta PHP</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío 3</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+
+      :root {
+        --fuenteprimaria: "Mulish", sans-serif;
+      }
+
+      body {
+        font-family: var(--fuenteprimaria);
+        text-align: center;
+        width: 600px;
+        margin: auto;
+        margin-top: 100px;
+        
+      }
+
+      input,
+      button {
+        width: 500px;
+        height: 50px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: #414166 solid 2px;
+        font-size: 18px;
+        font-weight: 400;
+        display: block;
+      }
+
+      button {
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+        background-color: #0a2ff1;
+        width: 523px;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #04146c;
+      }
+
+      p {
+        color: #0a2ff1;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+      }
+
+      div {
+        border-bottom: #4f515a solid 1px;
+      }
+
+      form{
+        box-sizing: content-box;
+        width: auto;
+        
+        border: #818ec9 solid 1px;
+
+      }
+
+      hr{
+        width: 520px;
+
+        border-top: #000000 solid 1px;
+      }
+    </style>
+  </head>
+
+  <body>
+      <form>
+        <h1>Iniciar sesion</h1>
+        <input
+          type="text"
+          name="name"
+          placeholder="Introduzca el nombre de usuario"
+        />
+
+        <input
+          type="text"
+          name="contrasena"
+          placeholder="Introduzca la contraseña"
+        />
+
+        <button>Iniciar sesion</button>
+
+        <hr>
+        
+        <p>
+          ¿No se puede iniciar sesion?<br/> <br/>
+          Registrese para crear una cuenta nueva
+        </p>
+      </form>
+
+
+  </body>
+</html>
